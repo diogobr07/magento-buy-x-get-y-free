@@ -3,7 +3,7 @@
 <config>
   <modules>
 	  <PAJ_BuyXGetYFree>
-		  <version>0.72</version>
+		  <version>0.70</version>
 	  </PAJ_BuyXGetYFree>
   </modules> 
     <global>
@@ -57,6 +57,18 @@
 			</modules> 
 		</translate>		
 	</frontend>
+
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<PAJ_BuyXGetYFree before="Mage_Adminhtml">PAJ_BuyXGetYFree_Adminhtml</PAJ_BuyXGetYFree>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
 	
 	<adminhtml>
 		<acl>
